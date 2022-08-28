@@ -1,0 +1,12 @@
+{
+    // Workbench
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 15,
+
+    // Theme
+    "workbench.iconTheme": "ayu",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+
+    // Editor
+    "editor.rulers": [79]
+}
