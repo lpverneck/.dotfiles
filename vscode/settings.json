@@ -1,6 +1,24 @@
 {
+    // Better Defaults
+    "workbench.editor.enablePreview": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.newWindowDimensions": "offset",
+    "editor.snippetSuggestions": "top",
+
     // Workbench
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": true,
     "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "left",
     "workbench.tree.indent": 15,
 
     // Theme
@@ -8,5 +26,10 @@
     "workbench.colorTheme": "Ayu Mirage Bordered",
 
     // Editor
-    "editor.rulers": [79]
+    "editor.rulers": [
+        79
+    ],
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": true,
+	"editor.lineNumbers": "on"
 }
