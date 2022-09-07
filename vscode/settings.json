@@ -31,5 +31,5 @@
     ],
     "editor.minimap.enabled": false,
     "editor.guides.indentation": true,
-	"editor.lineNumbers": "on"
+    "editor.lineNumbers": "on"
 }
