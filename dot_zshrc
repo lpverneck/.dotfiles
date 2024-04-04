@@ -133,7 +133,7 @@ alias info="neofetch"
 alias ll="eza -l --icons"
 alias llg="eza -l --icons --tree"
 
-# export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
 
 # Set infinite history size
 #HISTSIZE=-1
