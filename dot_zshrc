@@ -132,6 +132,7 @@ alias f="fzf"
 alias info="neofetch"
 alias ll="eza -l --icons"
 alias llg="eza -l --icons --tree"
+alias gs="git status"
 
 export WORKON_HOME=$HOME/.virtualenvs
 
