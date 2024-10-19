@@ -1,0 +1,64 @@
+{
+    // Better Defaults
+    "workbench.editor.enablePreview": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.newWindowDimensions": "offset",
+    "editor.snippetSuggestions": "top",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 15,
+
+    // Theme
+    "workbench.iconTheme": "ayu",
+    "window.enableMenuBarMnemonics": false,
+    "window.customMenuBarAltFocus": false,
+    "editor.rulers": [
+        79
+    ],
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": true,
+    "editor.lineNumbers": "on",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+      },
+      "yaml.customTags": [ // (1)!
+        "!ENV scalar",
+        "!ENV sequence",
+        "!relative scalar",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+    ],
+    "workbench.colorTheme": "GitHub Dark",
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "[html]": {
+        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    },
+    "prettier.tabWidth": 4,
+    "editor.fontFamily": "Monaspace Neon, monospace",
+    "editor.fontLigatures": "'calt'",
+    "editor.fontSize": 13,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "window.systemColorTheme": "auto",
+    "window.nativeTabs": true,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never",
+}
