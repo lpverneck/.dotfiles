@@ -10,6 +10,9 @@ tap "homebrew/cask-fonts"
 # install packages + apps
 brew "chezmoi"
 brew "git"
+brew "zsh"
+brew "wget"
+brew "curl"
 brew "neovim"
 brew "fzf"
 brew "zsh-autosuggestions"
@@ -26,9 +29,8 @@ brew "python@3.13"
 brew "ruff"
 brew "poetry"
 brew "mas"
-# brew "tmux"
-# brew "zsh"
-
+brew "tmux"
+# brew "asdf"
 
 # install casks
 cask "raycast"
@@ -51,6 +53,12 @@ cask "figma"
 cask "anki"
 cask "logi-options+"
 cask "font-hack-nerd-font"
+cask "font-monaspace"
+cask "font-jetbrains-mono"
+cask "font-inconsolata"
+cask "font-roboto"
+cask "font-roboto-mono"
+# cask "orbstack"
 # cask "mochi"
 # cask "linear-linear"
 # cask "openemu"
@@ -61,4 +69,5 @@ cask "font-hack-nerd-font"
 mas "Things-3", id: 904280696
 mas "Klack", id: 6446206067
 mas "Kindle", id: 302584613
-# mas 'Xcode', id: 497799835
+# mas "Xcode", id: 497799835
+# mas "Tailscale", id: 1475387142
