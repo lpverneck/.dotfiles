@@ -27,6 +27,8 @@ https://mac-key-repeat.zaymon.dev/
 
 # brew tap Homebrew/bundle
 
+# setup tmux configs
+
 # echo $0
 # which zsh
 # chsh -s $(which zsh)
