@@ -40,3 +40,14 @@ code --install-extension ms-python.python
 code --install-extension njpwerner.autodocstring
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension eamodio.gitlens
+
+
+## Replace Spotlight
+
+https://manual.raycast.com/hotkey#block-22d51aad070942b5ba7cb35e5e15ee66
+
+## Add SSH Github Key
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
