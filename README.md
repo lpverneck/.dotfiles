@@ -11,6 +11,12 @@ xcode-select --install
 # Install terminal
 brew install iterm2
 
+brew install git
+
+brew install chezmoi
+
+# configurar chave SSH antes !
+
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -21,13 +27,26 @@ echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/
 
 # change hostname
 https://gist.github.com/a1ip/68db7b4e137d958da58e587a3a44dab8
+```bash
+hostname
+scutil --get ComputerName
+scutil --get LocalHostName
+scutil --get HostName
+```
 
 # Change the keyboard repeat rate
+# Initial delay: 180 ms
+# Key repeat interval: 15 ms
 https://mac-key-repeat.zaymon.dev/
+```bash
+defaults write -g InitialKeyRepeat -int 12
+defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
 
 # brew tap Homebrew/bundle
 
-# setup tmux configs
+# setup tmux configs AMANHA!
 
 # echo $0
 # which zsh
