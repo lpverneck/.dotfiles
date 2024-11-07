@@ -134,7 +134,7 @@ alias ll="eza -l --icons"
 alias llg="eza -l --icons --tree"
 alias gs="git status"
 
-export WORKON_HOME=$HOME/.virtualenvs
+export venvs=$HOME/.virtual_envs
 
 # Set infinite history size
 #HISTSIZE=-1
