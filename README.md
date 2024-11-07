@@ -78,6 +78,12 @@ chezmoi apply
 brew bundle install
 ```
 
-#### 10. Replace Spotlight
+#### 10. Install Tmux Plugin Manager (TPM)
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+#### 11. Replace Spotlight
 
 - [Disable hotkey for Spotlight](https://manual.raycast.com/hotkey#block-22d51aad070942b5ba7cb35e5e15ee66)
