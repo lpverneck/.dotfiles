@@ -1,32 +1,29 @@
-# Configuration Steps
+# .dotfiles
+
+### OS Configuration
+
+#### 1. System updates
 
 ```bash
 sudo softwareupdate -i -a
-
 xcode-select --install
+```
 
-# Install Homebrew !!!!
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#### 2. Change some settings
 
-# Install terminal
-brew install iterm2
+```bash
+defaults write -g InitialKeyRepeat -int 12
+defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
 
-brew install git
+defaults write com.apple.dock autohide-delay -int 0
+defaults write com.apple.dock autohide-time-modifier -float 0.4
+killall Dock
+```
 
-brew install chezmoi
+#### 3. Change computer hostname
+- [How to change the computer hostname from terminal](https://gist.github.com/a1ip/68db7b4e137d958da58e587a3a44dab8)
 
-# configurar chave SSH antes !
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Power Level 10k
-brew install powerlevel10k
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
-# p10k configure
-
-# change hostname
-https://gist.github.com/a1ip/68db7b4e137d958da58e587a3a44dab8
 ```bash
 hostname
 scutil --get ComputerName
@@ -34,39 +31,53 @@ scutil --get LocalHostName
 scutil --get HostName
 ```
 
-# Change the keyboard repeat rate
-# Initial delay: 180 ms
-# Key repeat interval: 15 ms
-https://mac-key-repeat.zaymon.dev/
+### Dotfiles Setup
+
+#### 4. Install Homebrew
+
 ```bash
-defaults write -g InitialKeyRepeat -int 12
-defaults write -g KeyRepeat -int 1
-defaults write -g ApplePressAndHoldEnabled -bool false
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-# brew tap Homebrew/bundle
+#### 5. Install some dependencies
 
-# setup tmux configs AMANHA!
-
-# echo $0
-# which zsh
-# chsh -s $(which zsh)
+```bash
+brew install iterm2
+brew install git
+brew install chezmoi
 ```
 
-## Vscode Extensions
-code --install-extension teabyii.ayu
-code --install-extension ms-python.python
-code --install-extension njpwerner.autodocstring
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension eamodio.gitlens
+#### 6. Install Oh My Zsh
 
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-## Replace Spotlight
+#### 7. Create GitHub SSH Key
 
-https://manual.raycast.com/hotkey#block-22d51aad070942b5ba7cb35e5e15ee66
+- [Generating a new SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding a new SSH Key to GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-## Add SSH Github Key
+#### 8. Initialize chezmoi with the dotfiles repo
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+```bash
+# HTTPS
+chezmoi init https://github.com/lpverneck/.dotfiles.git
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+# SSH
+chezmoi init git@github.com:lpverneck/.dotfiles.git
+```
+
+```bash
+chezmoi apply
+```
+
+#### 9. Run Brewfile
+
+```bash
+brew bundle install
+```
+
+#### 10. Replace Spotlight
+
+- [Disable hotkey for Spotlight](https://manual.raycast.com/hotkey#block-22d51aad070942b5ba7cb35e5e15ee66)
