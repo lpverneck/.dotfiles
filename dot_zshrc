@@ -135,6 +135,8 @@ alias llg="eza -l --icons --tree"
 alias gs="git status"
 
 export venvs=$HOME/.virtual_envs
+export SB="$HOME/Google Drive/My Drive/2025/Digital Garden/"
+export SB_PUB="$HOME/dev/notes/"
 
 # Set infinite history size
 #HISTSIZE=-1
