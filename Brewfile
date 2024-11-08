@@ -35,7 +35,6 @@ brew "tmux"
 
 # install casks
 cask "raycast"
-cask "dropzone"
 cask "visual-studio-code"
 cask "bitwarden"
 cask "brave-browser"
@@ -78,5 +77,6 @@ cask "font-roboto-mono"
 mas "Things-3", id: 904280696
 mas "Klack", id: 6446206067
 mas "Kindle", id: 302584613
+mas "Dropover", id: 1355679052
 # mas "Xcode", id: 497799835
 # mas "Tailscale", id: 1475387142
