@@ -1,54 +1,82 @@
 # specify a directory to install
 cask_args appdir: "/Applications"
 
+
 # taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "mongodb/brew"
+tap "hashicorp/tap"
+tap "oven-sh/bun"
+
 
 # install formulae
+
+# tech stack
+brew "bun"
+brew "mongodb-community@8.0"
+brew "node"
+brew "postgresql@14"
+brew "python@3.13"
+brew "sqlite3"
+brew "terraform"
+brew "yarn"
+
+# tech managers
+brew "asdf"
 brew "chezmoi"
-brew "mas"
-brew "tmux"
-brew "git"
-brew "ffmpeg"
-brew "zsh"
-brew "zsh-completions"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "wget"
-brew "curl"
-brew "neovim"
-brew "fzf"
-brew "bat"
+brew "nvm"
+brew "uv"
+
+# cli tools
 brew "autojump"
-brew "neofetch"
-brew "eza"
+brew "awscli"
+brew "bash"
+brew "bat"
+brew "curl"
 brew "diff-so-fancy"
-brew "gh"
-brew "rga"
-brew "ripgrep"
 brew "duf"
+brew "eza"
+brew "ffmpeg"
+brew "fzf"
+brew "git"
+brew "gh"
 brew "jq"
-brew "yq"
+brew "mas"
+brew "neofetch"
+brew "neovim"
+brew "openapi-generator"
+brew "pandoc"
+brew "ripgrep"
+brew "rga"
+brew "ruff"
 brew "shellcheck"
 brew "shfmt"
-brew "pandoc"
 brew "tlrc"
-brew "node"
-brew "python@3.13"
-brew "ruff"
-brew "uv"
-brew "postgresql@14"
-brew "mongodb-community@8.0"
-brew "sqlite3"
-# brew "yarn"
-# brew "asdf"
-# brew "yt-dlp"
-# brew "exercism"
+brew "tmux"
+brew "wget"
+brew "yq"
+brew "yt-dlp"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "zstd"
 
+# others
+brew "exercism" # programming practice
+
+# ai stuff
+brew "aider"
+brew "llm"
+brew "ollama"
+
+
+# ------------------------------------------------------------------------
+#                                 CASKS
+# ------------------------------------------------------------------------
 # install casks
 cask "raycast"
 cask "visual-studio-code"
@@ -74,6 +102,14 @@ cask "anki"
 cask "logi-options+"
 cask "zotero"
 cask "whatsapp"
+cask "drawio"
+# cask chatGPT
+# cask claude
+# cask perplexity
+# cask etc.
+# cask cursor
+
+
 
 # situational
 
@@ -117,5 +153,6 @@ mas "Things-3", id: 904280696
 mas "Klack", id: 6446206067
 mas "Kindle", id: 302584613
 mas "Dropover", id: 1355679052
+# mas "Photomator", id: 1111111111
 # mas "Xcode", id: 497799835
 # mas "Tailscale", id: 1475387142
