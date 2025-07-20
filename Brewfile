@@ -82,7 +82,7 @@ cask "raycast"
 cask "visual-studio-code"
 cask "bitwarden"
 cask "brave-browser"
-cask "google-drive"
+# cask "google-drive"
 cask "spotify"
 cask "discord"
 cask "obsidian"
@@ -93,7 +93,7 @@ cask "the-unarchiver"
 cask "hot"
 cask "flux"
 cask "appcleaner"
-# cask "iterm2"
+cask "iterm2"
 cask "ghostty"
 cask "cleanshot"
 cask "notion-calendar"
@@ -103,12 +103,16 @@ cask "logi-options+"
 cask "zotero"
 cask "whatsapp"
 cask "drawio"
-# cask chatGPT
+cask "telegram"
+# cask chatgpt
 # cask claude
 # cask perplexity
 # cask etc.
 # cask cursor
-
+# cask "macwhisper"
+# cask "superwhisper"
+# cask "backblaze"
+# cask "balenfaetcher"
 
 
 # situational
@@ -126,8 +130,8 @@ cask "drawio"
 # cask "scratch"
 # cask "vlc"
 # cask "balenaetcher"
-# cask "chatgpt"
-# cask "claude"
+
+
 # cask "gimp"
 # cask "slack"
 # cask "framer"
@@ -153,6 +157,7 @@ mas "Things-3", id: 904280696
 mas "Klack", id: 6446206067
 mas "Kindle", id: 302584613
 mas "Dropover", id: 1355679052
-# mas "Photomator", id: 1111111111
+mas "Photomator", id: 1444636541
+mas "Perplexity", id: 6714467650
 # mas "Xcode", id: 497799835
 # mas "Tailscale", id: 1475387142
