@@ -35,6 +35,7 @@ brew "autojump"
 brew "awscli"
 brew "bash"
 brew "bat"
+brew "bruno-cli"
 brew "curl"
 brew "diff-so-fancy"
 brew "duf"
@@ -43,6 +44,7 @@ brew "ffmpeg"
 brew "fzf"
 brew "git"
 brew "gh"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 brew "jq"
 brew "mas"
 brew "neofetch"
@@ -66,7 +68,7 @@ brew "zsh-syntax-highlighting"
 brew "zstd"
 
 # others
-brew "exercism" # programming practice
+# brew "exercism"
 
 # ai stuff
 brew "aider"
@@ -74,75 +76,69 @@ brew "llm"
 brew "ollama"
 
 
-# ------------------------------------------------------------------------
-#                                 CASKS
-# ------------------------------------------------------------------------
 # install casks
-cask "raycast"
-cask "visual-studio-code"
+
+# apps
+cask "anki"
+cask "appcleaner"
+cask "balenaetcher"
 cask "bitwarden"
 cask "brave-browser"
-# cask "google-drive"
-cask "spotify"
-cask "discord"
-cask "obsidian"
-cask "transmission"
-cask "plex-media-server"
-cask "iina"
-cask "the-unarchiver"
-cask "hot"
-cask "flux"
-cask "appcleaner"
-cask "iterm2"
-cask "ghostty"
+cask "bruno"
+cask "calibre"
+cask "chatgpt"
+cask "claude"
 cask "cleanshot"
-cask "notion-calendar"
-cask "figma"
-cask "anki"
-cask "logi-options+"
-cask "zotero"
-cask "whatsapp"
+cask "discord"
 cask "drawio"
+cask "figma"
+cask "flux"
+cask "ghostty"
+cask "gimp"
+cask "hot"
+cask "iina"
+cask "imageoptim"
+cask "logi-options+"
+cask "nordvpn"
+cask "notion-calendar"
+cask "obs"
+cask "obsidian"
+cask "plex-media-server"
+cask "raycast"
+cask "spotify"
+cask "stremio"
 cask "telegram"
-# cask chatgpt
-# cask claude
-# cask perplexity
-# cask etc.
-# cask cursor
-# cask "macwhisper"
-# cask "superwhisper"
-# cask "backblaze"
-# cask "balenfaetcher"
-
+cask "the-unarchiver"
+cask "transmission"
+cask "visual-studio-code"
+cask "whatsapp"
+cask "zoom"
+cask "zotero"
 
 # situational
-
+# cask "backblaze"
+# cask "cursor"
 # cask "docker"
-# cask "notion"
-# cask "calibre"
-# cask "orbstack"
-# cask "mochi"
+# cask "framer"
+# cask "google-drive"
+# cask "iterm2"
 # cask "keycastr"
 # cask "linear-linear"
-# cask "openemu"
-# cask "netnewswire"
-# cask "vnc-viewer"
-# cask "scratch"
-# cask "vlc"
-# cask "balenaetcher"
-
-
-# cask "gimp"
-# cask "slack"
-# cask "framer"
-# cask "obs"
-# cask "zoom"
 # cask "loom"
-# cask "screen-studio"
+# cask "macwhisper"
 # cask "microsoft-office"
-# cask "postman"
-# cask "zed"
-# cask "imageoptim"
+# cask "mochi"
+# cask "netnewswire"
+# cask "notion"
+# cask "openemu"
+# cask "orbstack"
+# cask "scratch"
+# cask "screen-studio"
+# cask "slack"
+# cask "superwhisper"
+# cask "vlc"
+# cask "vnc-viewer"
+
 
 # install fonts
 cask "font-hack-nerd-font"
@@ -151,6 +147,7 @@ cask "font-jetbrains-mono"
 cask "font-inconsolata"
 cask "font-roboto"
 cask "font-roboto-mono"
+
 
 # install mas
 mas "Things-3", id: 904280696
